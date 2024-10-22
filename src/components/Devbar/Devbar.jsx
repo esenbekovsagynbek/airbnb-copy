@@ -391,10 +391,11 @@ const Devbar = () => {
                 {moduleKey}
                 <span className='ml-2 text-sm text-muted-foreground'>
                   {moduleProgress[moduleKey] + 1 ===
-                    Object.keys(modules[moduleKey].steps).length
+                  Object.keys(modules[moduleKey].steps).length
                     ? 'Completed'
-                    : `(${moduleProgress[moduleKey] + 1} of ${Object.keys(modules[moduleKey].steps).length
-                    } tasks)`}
+                    : `(${moduleProgress[moduleKey] + 1} of ${
+                        Object.keys(modules[moduleKey].steps).length
+                      } tasks)`}
                 </span>
               </SelectItem>
             ))}
